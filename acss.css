@@ -259,7 +259,8 @@
 
 @media (max-width: 300px) {
 	.hamburger-menu__button span {
-		line-height: 4px;}
+		line-height: 4px;
+		padding-bottom: 35px;}
 
 }
 
