@@ -155,14 +155,27 @@
 		position: relative;
 		z-index: 10;}
 
-	.hamburger-menu__button span {
+		.hamburger-menu__button span {
 		display: block;
-		line-height: 3px;
+		width: 22px;
+		height: 2px;
+		border-radius: 1px;
+		background-color: #1a1a1a;
+		margin-bottom: 5px;
+		z-index: 15;
+		
+	}
+		
+		display: block;
+		width: 40px; 
+		height:1px; color:#333;
+		z-index: 999;
+		/*line-height: 3px;
 		padding-bottom: 3px;
-		color:red;
+		margin-bottom: 0;
 		text-align: center;
 		font-size: 1.6rem;
-		font-weight: 400;}
+		font-weight: 400;*/}
 	
 	.hamburger-menu__button span:last-child {
 		padding-bottom: 5px;}
