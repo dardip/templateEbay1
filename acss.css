@@ -257,6 +257,11 @@
 
 }
 
+@media (max-width: 300px) {
+	.hamburger-menu__button span {
+		line-height: 4px;}
+
+}
 
 
  
