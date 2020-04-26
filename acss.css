@@ -111,7 +111,7 @@
 
 
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
 
 
 		/*== BASICS ==*/
@@ -254,6 +254,13 @@
 		font-weight: bolder;
 		color:#444;
 		letter-spacing: 1px;}
+
+}
+
+@media (max-width: 500px) {
+	.hamburger-menu__button span {
+		line-height: 3px;
+		padding-bottom: 5px;}
 
 }
 
