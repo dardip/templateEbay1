@@ -146,8 +146,8 @@
 		left: 0;}
 
 	.hamburger-menu__button {
-		max-width: 40px;
-		height: auto;
+		width: 30px;
+		height: 30px;
 		border:;
 		border-radius:;
 		display: flex;
@@ -158,7 +158,7 @@
 
 	.hamburger-menu__button span {
 		display: block;
-		line-height: 8px;
+		line-height: 3px;
 		text-align: center;
 		font-size: 1.6rem;
 		font-weight: 400;}
