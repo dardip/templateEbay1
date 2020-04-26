@@ -34,7 +34,7 @@
 
 
 		/*== HEADER ==*/
-/*img {max-width:100%;}*/
+
 
 		.hdr_main {
 		background-color: #fff;
@@ -146,8 +146,8 @@
 		left: 0;}
 
 	.hamburger-menu__button {
-		width: 40px;
-		height: 40px;
+		max-width: 40px;
+		height: auto;
 		border:;
 		border-radius:;
 		display: flex;
@@ -259,10 +259,9 @@
 
 @media (max-width: 200px) {
 	.hamburger-menu__button span {
-		line-height: 2px;
+		line-height: 3px;
 		padding-bottom: 35px;}
 
 }
 
 
- 
