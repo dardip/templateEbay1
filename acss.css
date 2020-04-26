@@ -46,7 +46,7 @@
 		}
 		.hdr_logo img {
 		position: relative;
-		width:250px;}
+		max-width:250px;}
 
 
 		/*== SECTION ==*/
@@ -140,7 +140,7 @@
 		/*Hamburger menu: STYLE*/
 	.hamburger-menu {
 		height: 100%;
-		width: 300px;
+		max-width: 300px;
 		position: absolute;
 		bottom: 10px;
 		left: 0;}
