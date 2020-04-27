@@ -149,7 +149,7 @@
 		background-color: black;
 		margin: 6px 0;
 		left:6px;
-		top:0px;
+		top:-5px;
 		flex-direction:column;
 		justify-content:center;
 		position: relative;
