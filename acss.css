@@ -196,8 +196,8 @@
 		display: block;
 		width: 40px;
 		height: 40px;
-		outline: 2px solid yellow;
-		opacity: 3;
+		outline: none;
+		opacity: 0;
 		position: absolute;
 		left: 0px;
 		z-index: 11;
