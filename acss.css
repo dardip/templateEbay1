@@ -162,11 +162,11 @@ color: #004d40;
 		bottom: 10px;
 		left: 0;}
 
-	.hamburger-menu__button {
-		width: 50px;
-		height: 40px;
-		border: 5px solid black;
-		display: flex;
+	.hamburger-menu__button div {
+		width: 35px;
+		height: 5px;
+		background-color: black;
+		margin: 6px 0;
 		flex-direction:column;
 		justify-content:center;
 		position: relative;
