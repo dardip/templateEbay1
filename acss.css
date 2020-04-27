@@ -149,6 +149,7 @@
 		background-color: black;
 		margin: 6px 0;
 		left:6px;
+		top:10px;
 		flex-direction:column;
 		justify-content:center;
 		position: relative;
@@ -165,7 +166,7 @@
 	} */
 	
 	.hamburger-menu__button span:last-child {
-		padding-bottom: 5px;}
+		padding-bottom: 15px;}
 	
 	.hamburger-menu__wrapper {
 		position: relative;
@@ -197,8 +198,7 @@
 		height: 40px;
 		outline: 2px solid yellow;
 		opacity: 3;
-		position: relative;
-		top: 68px;
+		position: absolute;
 		left: 0px;
 		z-index: 11;
 		cursor: pointer;}
