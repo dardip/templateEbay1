@@ -141,7 +141,7 @@ margin:1%;}
     margin-top:5%;}
 
 .image-gallery .big-image {
-    width: 60%;
+    width: 80%;
     max-height: 400px;
     overflow: hidden;
     margin: 0 auto;
@@ -337,6 +337,9 @@ color: white;}
 	
 	.hamburger-menu__wrapper input:checked ~ .hamburger-menu__button {
 		background: none;}
+    
+    .hamburger-menu__wrapper input:checked .image-gallery div {
+        opacity: 0.7;}
 	
 	.hamburger-menu__wrapper input:checked ~ .hamburger-menu__slider {
 		transform:none;}
