@@ -211,6 +211,49 @@ content: "";
 display: table;
 clear: both;}
 
+/*== SECTION 2 ==*/
+
+.taggle-div {padding-bottom:10px; width:100%;}
+
+/* Labels for checked inputs */
+input:checked + label {
+  color: red;
+ text-decoration: underline;}
+    
+/* Remove Radio inptut circle& ul/li style*/
+
+    
+ /*Taggle Interaction*/
+.taggle-box__default,
+.taggle-box2,
+.taggle-box3 {
+  display: none;
+  background: #ccc;
+  width: 100%;
+  max-height: 100%;
+  border: 1px solid #1a1a1a;
+}
+
+
+#opt-in1:checked ~ .taggle-box__default {
+  display: block;}
+    
+#opt-in2:checked ~ .taggle-box2 {
+  display: block;
+  margin-bottom: 10px;
+  }
+
+#opt-in3:checked ~ .taggle-box3 {
+  display: block;
+  margin-bottom: 10px;
+  overflow: hidden;}
+    
+    
+ul {list-style: none;}
+li {display: inline-block;margin-right: 15px;}
+input {visibility:hidden;}
+label {cursor: pointer;}
+input:checked + label {text-decoration: underline;}
 
 /*== FOOTER ==*/
 
