@@ -70,6 +70,8 @@ font-family: Arial, Helvetica, sans-serif;
 .Mt\(20\) {margin-top: 20px;}
 
 
+
+
 /*== STYLING ELEMENTS ==*/
 
 /*== HEADER ==*/
@@ -209,6 +211,8 @@ margin:1%;}
 
 
 .taggle-div {position:relative; display: block; width: 50%;float: right;}
+.label {padding: 5px; font-size: 1.2rem;}
+.taggle-box{margin:5px;}
 
 /* Labels for checked inputs */
 input:checked + label {
