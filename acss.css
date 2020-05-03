@@ -101,7 +101,8 @@ display: block;
 margin: 0 auto;
 width:100%;
 margin-top: 2%;
-border-top: 1px solid #777;}
+border-top: 1px solid #777;
+color:#2a2a2a;}
 
 /*Main Navigation*/    
 .sec-main__nav {
@@ -213,8 +214,10 @@ margin:1%;}
 
 /* Labels for checked inputs */
 input:checked + label {
-  color: red;
- text-decoration: underline;}
+color:#1a1a1a;
+text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;}
     
 /* Remove Radio inptut circle& ul/li style*/
 
@@ -246,9 +249,9 @@ input:checked + label {
     
 ul {list-style: none;}
 li {display: inline-block;margin-right: 15px;}
-input {visibility:hidden;}
+input {display:none;}
 label {cursor: pointer;}
-input:checked + label {text-decoration: underline;}
+input:checked + label {text-decoration: none;}
 
 /*Clear floats after the columns*/
 .sec-main__wrapper:after {
@@ -369,11 +372,9 @@ color: white;}
 		transform: translateX(-310px);
 		transition: transform 0.4s;
 		text-align: left;
-		padding-bottom: 45px;}
-	
-	.hamburger-menu__slider{
-		padding-top: 30%;
-	}
+		padding-bottom: 45px;
+        padding-top: 30%;}
+    
 	
 	/*Hamburger menu: INTERACTION*/
 	.hamburger-menu__wrapper input[type='checkbox'] {
@@ -384,7 +385,7 @@ color: white;}
 		opacity: 0;
 		position: absolute;
 		left: 0px;
-		z-index: 11;
+		z-index: 90;
 		cursor: pointer;}
 	
 	.hamburger-menu__wrapper input:checked ~ .hamburger-menu__button {
@@ -450,12 +451,14 @@ color: white;}
     .art-item__desc{
 		position: relative;
         display: block;
-        width:80%;
+        width:90%;
 		margin: 0 auto;
 		margin-bottom: 20px;
         float: none;
 		z-index: 1;}
     
     /*== SECTION 2 sm ==*/
-    .taggle-div {width:100%;margin-top: 2%; margin-bottom: 2%;}
+    .taggle-div {width:100%;margin:auto; margin-bottom: 2%;}
+    .taggle-box {width:90%;margin: 20 auto;}
+    
 }
