@@ -65,11 +65,10 @@ font-family: Arial, Helvetica, sans-serif;
 .calisto { font-family: "Calisto MT", serif; }
 .garamond { font-family: garamond, serif; }
 .baskerville { font-family: baskerville, serif; }
+.moda { font-family: 'Monda', sans-serif;}
 
 /*== Margins ==*/
 .Mt\(20\) {margin-top: 20px;}
-
-
 
 
 /*== STYLING ELEMENTS ==*/
@@ -211,8 +210,6 @@ margin:1%;}
 
 
 .taggle-div {position:relative; display: block; width: 50%;float: right;}
-.label {padding: 5px; font-size: 1.2rem;}
-.taggle-box{margin:5px;}
 
 /* Labels for checked inputs */
 input:checked + label {
@@ -227,10 +224,9 @@ input:checked + label {
 .taggle-box2,
 .taggle-box3 {
   display: none;
-  background: #ccc;
   width: 100%;
   max-height: 100%;
-  border: 1px solid #1a1a1a;
+  
 }
 
 
