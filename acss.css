@@ -212,12 +212,55 @@ margin:1%;}
 		z-index: 1;}
 
 /*== SECTION 2 ==*/
+.item1,.item2 {
+  display: block;
+  width:100%;
+  height: 40px;
+  background-color: #333;
+  text-align: left;
+  padding: 20px 0 0 10px;
+  margin-bottom: 1px;
+  color:white;}
+    
+label:hover {
+  cursor: pointer;
+  text-decoration: underline;}
+    
+input{
+  position: absolute;
+  left: -999em;}
 
+.ex1 .hide1,
+.ex2 .hide2 {
+  width:100%;
+  padding: 0 0 0 10px;
+  display:block;
+  height: 200px; /* any arbitrary height but best at the minimum initial height you would want. */
+  overflow: hidden;
+  background: #cdcdcd;
+ transition: all 0.5s ease;
+  }
+
+.inner1,
+.inner2 {
+  padding: 10px;}
+    
+.ex1 input[type="checkbox"]:checked + .hide1 {
+  height: 0px;
+  opacity: 0;
+  display: block;
+transition: all 0.5s ease;}
+    
+.ex2 input[type="checkbox"]:checked + .hide2 {
+  height: 0px;
+  opacity: 0;
+  display: block;}
 
 .taggle-div {position:relative; display: block; width: 50%;float: right;}
-.taggle-box {width:90%;margin:20px auto;}
 
-/* Labels for checked inputs */
+/*.taggle-box {width:90%;margin:20px auto;}
+
+/* Labels for checked inputs 
 input:checked + label {
 color:#8D3D3D;
 text-decoration: none;
@@ -227,7 +270,7 @@ text-transform: uppercase;}
 /* Remove Radio inptut circle& ul/li style*/
 
     
- /*Taggle Interaction*/
+ /*Taggle Interaction
 .taggle-box__default,
 .taggle-box2,
 .taggle-box3 {
