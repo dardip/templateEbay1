@@ -145,7 +145,7 @@ margin:1%;}
   width: 40%;
   margin: 10px auto;
   margin-left:5%;
-  border: 1px solid red;}
+  /*border: 1px solid red;*/}
 
 .hide img:not(:first-child){
   opacity:0;
