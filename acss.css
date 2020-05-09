@@ -118,98 +118,89 @@ text-align: center;}
 .hamburger-menu__button span,
 .hamburger-menu__slider,
 .hamburger-menu__wrapper input {
-display: none;}
+display: block;}
 
 /*Main Section Top Navigation List*/
-.sec-main__nav ul > li {
+.nav-sm__link{
 position: relative;
-display: inline-block;
-list-style-type: none;
+display: none;
+list-style-type:none;
 margin:1%;}
+
+.nav-slider__link{
+  position: relative;
+  display:none;}
+
+.nav-lg__link{
+  display:inline-block;}
 
 
 		/*Articles*/
 
-/*Images: gallery and Thumbs*/
-.img-responsive {
-    display:block;
-    max-width: 100%;                           
-    margin: 0 auto;
-    height: auto;}
+/*====START: IMAGE GALLERY (Thumbnails Toggle) ====*/
 
-.image-gallery {
-    position: relative;
-    float: left;
-    display: block;
-    width: 50%;
-    margin-top:5%;}
+.img-gallery__wrapper{
+  position: relative;
+  float: left;
+  width: 40%;
+  margin: 10px auto;
+  margin-left:5%;
+  border: 1px solid red;}
 
-.image-gallery .big-image {
-    width: 80%;
-    max-height: 80%;
-    overflow: hidden;
-    margin: 0 auto;
-    position: relative;
-    border: 1px solid #c4c4c4}
+.hide img:not(:first-child){
+  opacity:0;
+  position: absolute;
+  width:100%;
+  margin: 0 auto;
+  /*border: 1px solid red;*/}
 
-.image-gallery .big-image img:not(:first-child) {
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    transition: opacity 350ms;}
+.hide img {
+  position: absolute;
+  margin: auto;
+  width: 100%;}
 
-/*Images: Interaction*/
-.image-gallery .big-image img#default {
-    opacity: 1;}
+.thumbnail { 
+  position: relative;
+  margin-top: 135%;
+  text-align: center;
+  display: block;
+border: 1px solid red;}
 
-.image-gallery .big-image img:target~img#default {
-    opacity: 0;}
+.thumbnail li {
+  display: inline-block;
+  width: 24%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid red;}
 
-.image-gallery .big-image img:target {
-    opacity: 1;}
+.thumbnail img{
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0px;
+  width:100%;}
 
+  /*THUMBs INTERACTION*/
 
-.image-gallery .thumbs ul {
-    margin: 2% auto;
-    padding: 0;
-    width:80%;
-    transition: 999999s all;
-    transform: translateX(0);
-    display: flex;}
+.hide img:target {
+  opacity: 1;}
 
-.image-gallery .thumbs li {
-    display: flex;
-    margin: auto;
-    width: 100%;}
+.hide img:target~img#default{
+  opacity: 0;}
 
-.image-gallery .thumbs li:nth-child(1) {
-    margin:0 4px 0 2px;}
+.hide img#default{
+  opacity: 1;}
 
-.image-gallery .thumbs li:nth-child(2) {
-    margin:0 4px 0 2px;}
-
-.image-gallery .thumbs li:nth-child(3) {
-    margin: 0 4px 0 2px;}
-
-.image-gallery .thumbs li:nth-child(4) {
-    margin: 0 4px 0 2px;}
-
-.image-gallery .thumbs li img {
-    border: 1px solid #c4c4c4;
-    width:100%;}
+/*====END: IMAGE GALLERY (Thumbnails Toggle) ====*/
 
  .art-item__desc{
-		width:45%;
-		position: relative;
-        display: inline-block;
-		float:right;
-        margin-top: 3%;
-        margin-right: 5%;
-		z-index: 1;}
+  width:45%;
+  position: relative;
+  display:block;
+  float:right;
+  margin-top: 3%;
+  margin-right: 5%;
+  z-index: 1;}
 
 /*== SECTION 2 ==*/
 .item1,.item2 {
@@ -238,8 +229,7 @@ input{
   height: 200px; /* any arbitrary height but best at the minimum initial height you would want. */
   overflow: hidden;
   background: #cdcdcd;
- transition: all 0.5s ease;
-  }
+ transition: all 0.5s ease;}
 
 .inner1,
 .inner2 {
@@ -249,7 +239,7 @@ input{
   height: 0px;
   opacity: 0;
   display: block;
-transition: all 0.5s ease;}
+  transition: all 0.5s ease;}
     
 .ex2 input[type="checkbox"]:checked + .hide2 {
   height: 0px;
@@ -333,11 +323,6 @@ color: white;}
 @media (max-width: 768px) {
 		/*== BASICS ==*/
     
-    .img-responsive {
-    display:block;
-    max-width: 100%;                           
-    margin: 0 auto;
-    height: auto;}
 
 	nav, article {
 		width: 100%;
@@ -364,27 +349,46 @@ color: white;}
     .sec-main__wrapper{
         display: block;
         margin: 0 auto;
+        padding: 2%;
         position: relative;
         width:100%;
         margin-top: 2%;
         border-top: 1px solid #777;}
+
 		/*Hamburger menu: STYLE*/
     
 	.hamburger-menu {
         display: block;
         z-index: 90;
-		height: auto;
-		max-width: 300px;
-		position: absolute;
-		bottom:;
-		left: 0;}
-    
-    .hamburger-menu__button {
-		display: block;}
+        height: auto;
+        max-width: 300px;
+        position: absolute;
+        left: 0;}
 
-	.hamburger-menu__button div {
+        .nav-lg__link{
+          display: none;}
+
+        .nav-sm__link{
+          display: block;
+          margin:4px;}
+
+        .nav-sm__link > div {
+          width: 30px;
+          height: 4px;
+          background-color: #2a2a2a;}
+
+        .nav-slider__link{
+          position: relative;
+          display:block;}
+
+        .hamburger-menu__slider{
+          display:block;
+          position: relative;
+          margin-top: 20px;}
+
+	.hamburger-menu__button li > div {
 		
-        width: 35px;
+    width: 35px;
 		height: 5px;
 		background-color: #2a2a2a;
 		margin: 6px 0;
@@ -447,50 +451,32 @@ color: white;}
 
 
 		/* Style the list inside the menu  */
-	.sec-main__nav ul >li {
-		display: none;}
+	.sec-main__nav  {
+    display: block;}
+  
 
 		/*== SECTION ==*/
 
 		/* Style the articles */
 
-/*style Gallery/Thums images */
-    .image-gallery {
-        position: relative;
-        margin: 10% auto;
-        float: none;
-        width:90%;}
+/*====START: IMAGE GALLERY (Thumbnails Toggle) ====*/
 
-    .image-gallery .big-image {
-        width: 80%;
-        max-height: 100%;
-        overflow: hidden;
-        margin: 0 auto;
-        margin-top: 10%;
-        position: relative;
-        border: 1px solid #c4c4c4;}
-    
-    .image-gallery .thumbs {
-        position: relative;
-        display: block;
-        overflow: hidden;
-        white-space:normal;
-        margin: 0 auto;
-        width: 100%;}
+.img-gallery__wrapper{
+  width:80%;float:none;}
+/*.hide img:not(:first-child){/*border: 1px solid red;}*/
+/*.hide img {}*/
+/*.thumbnail {}*/
+/*.thumbnail li {}*/
+/*.thumbnail img{}*/
 
-    .image-gallery .thumbs ul {
-        position: relative;
-        transition: 999999s all;
-        transform: translateX(0);
-        display: flex;}
+  /*THUMBs INTERACTION*/
 
-    .image-gallery .thumbs li {
-        width: 100%;}
+/*.hide img:target {}*/
+/*.hide img:target~img#default{}*/
+/*.hide img#default{}*/
 
-        
+/*====END: IMAGE GALLERY (Thumbnails Toggle) ====*/
 
-    .image-gallery .thumbs li img {
-        border: 1px solid #c4c4c4;}
 
 
     /*Item Description*/
@@ -509,4 +495,4 @@ color: white;}
     .taggle-div {width:100%;margin:auto; margin-bottom: 2%;}
     .taggle-box {width:90%;margin: 20 auto;}
     
-} 
+}
