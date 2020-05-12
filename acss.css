@@ -549,7 +549,7 @@ color: white;}
     text-align: center;}
 
     .test {
-      list-style: circle;
+      list-style: square;
       color: #2a2a2a;
       padding-left: 5%;
     }
