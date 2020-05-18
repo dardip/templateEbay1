@@ -50,7 +50,9 @@ main p {
     margin: 0 1% 1% 0;
     text-align: center;}
 
-.flag-img{margin:0 1% 0 1%;float: left;}
+.flag-img{margin:0 0 0 1%;float: left;}
+
+.flag-img img {max-width: 80%;}
 
 /*==SECTION: CTA_Info==*/
 .CTA_Info {
@@ -238,7 +240,7 @@ input {display: none;}
     text-decoration:none !important;color:#6ba4c0 !important;
 }
 
-.contentblock p {margin-top:0px;font-family: "Helvetica";font-size:14px;line-height:20px !important;color:#000;}
+.contentblock p {margin-top:0px;font-family: "Helvetica";font-size:.8em;line-height:20px !important;color:#000;}
 .contentblock p strong {color:#60231f;}
 
 .contentblock p strong a {text-decoration:none !important;color:#60231f !important;font-weight:Bold;}
