@@ -254,72 +254,118 @@ margin:1%;}
   color: #2a2a2a;
   text-align: center;
   border: 1px solid #f0efef;
-  border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;}
+  border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;}
 
-.label:hover {
-  cursor: pointer;
-  text-decoration: underline;
-  color:#2a2a2a}
-    
-input{
-  position: absolute;
-  left:999;}
-
-  .taggle-box p {
-    text-align: left;
-    width: 95%;
-  margin:0 auto;}
-
-/* Labels for checked inputs */
-input:checked + .label {
-  color:#2a2a2a;
-  text-decoration: none;
-  font-weight: bold;
-  text-transform: uppercase;}
-    
-/* Remove Radio inptut circle& ul/li style */
- /*Taggle Interaction*/
-.taggle-box__default,
-.taggle-box2,
-.taggle-box3 {
+  .taggle input {
+    border:2px solid red;
+  }
+  .taggle-div {
   position: relative;
-  opacity: 0;
-  display: none;
-  max-height: 100%;}
-
-#opt-in1:checked ~ .taggle-box__default {
-  display: inline-block;
-  opacity: 1;}
-    
-#opt-in2:checked ~ .taggle-box2 {
-  display: inline-block;
-  opacity: 1;
-  margin-bottom: 10px;}
-
-#opt-in3:checked ~ .taggle-box3 {
-  display: inline-block;
-  opacity: 1;
-  margin-bottom: 10px;}
-    
-
-input {display:none;}
-label {cursor: pointer;color:#fff;}
-input:checked + label {text-decoration: none;}
-
-.taggle-div {
-position: relative;
-display:block;
-float: none;
-width:100%;
-padding:1%; 
-margin-bottom: 2%;}
-
-.taggle-div li {
-position: relative;
-display: inline; 
-margin: 0 auto;}
+  display:block;
+  margin: 10% auto;
+  max-width:80%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;}
+  
+  .taggle-div label  {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px;
+    max-width:30%;
+    height: auto;
+    margin:0 auto;
+    border:1px solid #ffffff;
+    background-color: #dfdfdf;}
+  
+    .taggle-div .taggle-box{
+    position: relative;
+    margin: 10%;
+    padding: 5%;
+    margin-top: 2%;
+    width: 80%;
+    background-color: #f5f5f5;
+    display: none;
+    }
+  
+  .label {
+  font-size: 0.8em;
+  color:#2a2a2a;}
+  
+  .label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color:#2a2a2a}
+  
+  .taggle-box{
+    position: relative;
+    display:block;
+    margin-top: 2%;}
+  
+    .taggle-box p {
+      position: relative;
+      font-size: 1em;
+      display: block;
+      text-align: left;
+  
+    margin:0 auto;}
+  
+  /* Labels for checked inputs */
+  input:checked + .label {
+    color:#2a2a2a;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;}
+      
+  /* Remove Radio inptut circle& ul/li style */
+   /*Taggle Interaction*/
+  .taggle-box__default,
+  .taggle-box2,
+  .taggle-box3,
+  .taggle-box4,
+  .taggle-box5,
+  .taggle-box6 {
+    position: relative;
+    opacity: 1;
+    display: none;
+    width: 100%;
+    max-height: 100%;}
+  
+  #opt-in1:checked ~ .taggle-box__default {
+    display: block;
+    opacity: 1;}
+      
+  #opt-in2:checked ~ .taggle-box2 {
+    display: block;
+    opacity: 1;
+    margin-bottom: 10px;}
+  
+  #opt-in3:checked ~ .taggle-box3 {
+    display: block;
+    opacity: 1;
+    margin-bottom: 10px;}
+  
+    #opt-in4:checked ~ .taggle-box4 {
+    display: block;
+    opacity: 1;}
+      
+  #opt-in5:checked ~ .taggle-box5 {
+    display: block;
+    opacity: 1;
+    margin-bottom: 10px;}
+  
+  #opt-in6:checked ~ .taggle-box6 {
+    display: block;
+    opacity: 1;
+    margin-bottom: 10px;}
+      
+  
+  input {display:none;}
+  
+  input:checked + label {text-decoration: none;}
 
 /*Clear floats after the columns*/
 .sec-main__wrapper:after {
@@ -333,8 +379,9 @@ clear: both;}
 
 /* Style the footer */
 footer {
-background-color: #777;
+background-color: #d8d8d8;
 padding: 10px;
+font-size: .8em;
 text-align: center;
 color: white;}
 
@@ -552,15 +599,9 @@ color: white;}
     }
 
 
-    /*== SECTION 2 sm ==*/
-  .taggle-div {
-    display:block;
-    width:100%;
-    margin:0 auto; 
-    padding: 5%;
-    margin-bottom: 2%;}
+    /*== SECTION 2 sm - taggle divs ==*/
+    .taggle-div label  {
+      max-width: 80%;
+      display: block;}
 
-  .taggle-div li {position: relative;
-    display: block; 
-    margin: 0 auto;}
-}
+  }
