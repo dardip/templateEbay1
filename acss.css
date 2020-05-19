@@ -13,7 +13,7 @@
 /*Reset CSS*/
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block;}
-body { line-height: 1;}
+body { line-height: 1;letter-spacing: .09em;}
 ol,ul { list-style: none;}
 blockquote,q { quotes: none;}
 blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
@@ -265,7 +265,7 @@ margin:1%;}
   position: relative;
   display:block;
   margin: 10% auto;
-  max-width:80%;
+  max-width:90%;
   height: auto;
   text-align: center;
   overflow: hidden;}
@@ -276,6 +276,7 @@ margin:1%;}
     margin: 0 auto;
     padding: 10px;
     max-width:30%;
+    letter-spacing: .1em;
     height: auto;
     margin:0 auto;
     border:1px solid #ffffff;
@@ -286,10 +287,9 @@ margin:1%;}
     margin: 10%;
     padding: 5%;
     margin-top: 2%;
-    width: 80%;
+    width: auto;
     background-color: #f5f5f5;
-    display: none;
-    }
+    display: none;}
   
   .label {
   font-size: 0.8em;
@@ -309,9 +309,7 @@ margin:1%;}
       position: relative;
       font-size: 1em;
       display: block;
-      text-align: left;
-  
-    margin:0 auto;}
+      text-align: left;}
   
   /* Labels for checked inputs */
   input:checked + .label {
@@ -601,7 +599,10 @@ color: white;}
 
     /*== SECTION 2 sm - taggle divs ==*/
     .taggle-div label  {
-      max-width: 80%;
+      max-width: 100%;
       display: block;}
 
+    .taggle-div .taggle-box{
+      margin: 0;
+}
   }
