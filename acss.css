@@ -167,7 +167,7 @@ color: white;}
 .hamburger-menu__button,
 .hamburger-menu__button span,
 .slider,
-.hamburger-menu input,
+.hamburger-menu,
 .hamburger-menu .taggle_line,
 .hamburger-menu .slider_link {
   display: none;}
@@ -344,7 +344,7 @@ color: white;}
 
   /* Labels for checked inputs */
   input:checked + .label {
-    color:#eeeaea;
+    color:#2a2a2a;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;}
