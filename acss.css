@@ -298,12 +298,16 @@ color: white;}
   position: relative;
   display: inline-block;
   margin: 0 auto;
-  padding: 10px;
-  max-width:30%;
+  padding: .9em;
+  width:15%;
   letter-spacing: .1em;
   height: auto;
   margin:0 auto;
-  border:1px solid #ffffff;
+  border:1px solid rgb(247, 244, 244);
+  border-radius: 1.5em ;
+  -webkit-border-radius: 1.5em;
+  -moz-border-radius: 1.5em;
+  color: #2a2a2a;
   background-color: #dfdfdf;
   font-size: 0.8em;}
   
@@ -327,10 +331,20 @@ color: white;}
   font-size: 1em;
   display: block;
   text-align: left;}
-  
+
+  .taggle-box4 ol {
+  list-style-type: decimal;
+    font-size: .8em;
+    text-align: left;
+    margin: 1em 0 0 3em;
+    list-style-type: decimal;}
+
+  .taggle-box4 li {
+      margin-top: .7em;}
+
   /* Labels for checked inputs */
   input:checked + .label {
-    color:#2a2a2a;
+    color:#eeeaea;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;}
@@ -381,6 +395,30 @@ color: white;}
   input {display:none;}
   
   input:checked + label {text-decoration: none;}
+
+  table{ margin-top:20px;}
+
+    #table1_Header {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;}
+
+    #table1_Header, #table1_Header th {
+      border: 1px solid #ddd;
+      padding: 8px;}
+
+    #table1_Header tr:nth-child(even){background-color: #f2f2f2;}
+
+    #table1_Header tr:hover {background-color: #ddd;}
+
+
+
+    #table1_Header th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #2a2a2a;
+      color: white;}
 
 
 
@@ -617,10 +655,22 @@ color: white;}
 
     /*== SECTION 2 sm - taggle divs ==*/
     .taggle-div label  {
-      max-width: 100%;
+      width: 100%;
       display: block;}
 
     .taggle-div .taggle-box{
-      margin: 0;
-}
+      margin: 0;}
+
+.taggle-box4{width: 100%;
+position: relative;
+margin:auto;}
+
+#table1_Header  {
+  padding:0;
+  position:relative;
+  margin: 1em auto;
+  font-size: .8em;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;}
   }
