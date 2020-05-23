@@ -365,7 +365,8 @@ color: white;}
   
   #opt-in1:checked ~ .taggle-box__default {
     display: block;
-    opacity: 1;}
+    opacity: 1;
+    color:2a2a2a;}
       
   #opt-in2:checked ~ .taggle-box2 {
     display: block;
