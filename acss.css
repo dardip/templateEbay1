@@ -195,7 +195,7 @@ color: white;}
 
 .img_gallery-taggle .item_image {
   display: none;
-  max-width: 100%;
+  width: 100%;
   height: 500px;
   align-items: center;
   justify-content: center;}
@@ -640,8 +640,8 @@ color: white;}
   .Product_description p, .Product_description h2{
     text-align: left;}
 
-  .Product_description  h1{
-    text-align: left;}
+  .Product_description > h1{
+    text-align: center;}
 
   .test {
     list-style: square;
@@ -670,7 +670,10 @@ margin:auto;}
   border-collapse: collapse;
   width: 100%;}
   }
-
+  @media (max-width: 478px) {
+  .Product_description > h1{
+    text-align: left;}
+  }
   @media (max-width: 278px) {
     .img_gallery{
       width: 100%;
