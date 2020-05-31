@@ -327,7 +327,7 @@ color: #2a2a2a;}
   -moz-border-radius: 1.5em;
   color: #ffff;
   background-color: #301C1C;
-  background-image: linear-gradient(90deg, #3f2424, #58413C); /*Standard syntax} */
+  background-image: linear-gradient(90deg, #3f2424, #281D1B); /*Standard syntax} */
   font-size: .8em;}
   
   .taggle-div .taggle-box{
@@ -363,7 +363,7 @@ color: #2a2a2a;}
   /* Labels for checked inputs */
   input:checked + .label {
     color:#ffff;
-    text-decoration: none;
+    text-decoration: underline;
     font-weight: bold;
     text-transform: uppercase;}
 
@@ -439,7 +439,8 @@ color: #2a2a2a;}
       padding-top: 12px;
       padding-bottom: 12px;
       text-align: left;
-      background-color: #58413C;
+      background-color: #281D1B;
+      background-image: linear-gradient(90deg, #3f2424, #281D1B);
       color: white;}
 
 
