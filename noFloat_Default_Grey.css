@@ -1,683 +1,301 @@
-		/*HTML Style Structure*/
+<!doctype html><html>
 
+<title>myEbayTemplate</title>
 
-
-/*== BASICS ==*/
-
-/*Reset CSS*/
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display: block;}
-body { line-height: 1;letter-spacing: .09em;}
-ol,ul { list-style: none;}
-blockquote,q { quotes: none;}
-blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
-table { border-collapse: collapse; border-spacing: 0;}
-* {
-box-sizing: border-box;
-}
-body {
-font-family: Arial, Helvetica, sans-serif;
-} 
-
-
-
-/*==== STYLING Reference ACSS ====*/
-
-
-/*== TYPOGRAPHY ==*/
-
-.f1 { font-size: 1.45em; }
-.f2 { font-size: 1.35em; }
-.f3 { font-size: 1.25em; }
-.f4 { font-size: 1.05em; }
-.f5 { font-size: 1em; }
-.f6 { font-size: .8em; }
-
-.p1 { font-size: 1em;}
-.p2 { font-size: .8em;}
-.p3 { font-size: .6em;}
-
-
-.i {font-style: italic; }
-.b {font-weight: bold; }
-.underline { text-decoration: underline;}
-.strike {text-decoration: line-through;}
-.ttc {text-transform: capitalize;}
-.ttu {text-transform: uppercase; }
-
-.Lh\(f\) { line-height: 1.7rem;}
-.Lh\(p\) { line-height: 1.4rem;}
-
-.sans-serif {
-  font-family: -apple-system, BlinkMacSystemFont,'avenir next', avenir, helvetica,'helvetica neue',ubuntu, roboto, noto,'segoe ui', arial, sans-serif;}
-.serif { font-family: georgia, times, serif; }
-.code { font-family: Consolas, monaco, monospace; }
-.courier { font-family: 'Courier Next', courier, monospace; }
-.helvetica { font-family: 'helvetica neue', helvetica, sans-serif; }
-.avenir { font-family: 'avenir next', avenir, sans-serif; }
-.athelas { font-family: athelas, georgia, serif; }
-.georgia { font-family: georgia, serif; }
-.times { font-family: times, serif; }
-.bodoni { font-family: "Bodoni MT", serif; }
-.calisto { font-family: "Calisto MT", serif; }
-.garamond { font-family: garamond, serif; }
-.baskerville { font-family: baskerville, serif; }
-.moda { font-family: 'Monda', sans-serif;}
-
-/*== Margins ==*/
-.Mt\(20\) {margin-top: 20px;}
-.Ml\(5\) {margin-left: 5px;}
-
-
-/*== Paddings ==*/
-
-/*== ebay Summary Description ==*/
-
-.ebay-summary_sm{
-  display: none;
-}
-
-/*== STYLING WRAPPERS AREAS ==*/
-
-
-/* AREA 1 */
-.wrapper_hdr{
-  width:100%;}
-
-/* AREA 2 */
-.wrapper_main-content {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  width:100%;
-  margin-top: 2%;
-  color:#2a2a2a;}
-
-/* AREA 3 */
-.wrapper_sec-info {
-  position: relative;
-  display: block;
-  margin: 0 auto;
-  width:100%;
-  margin-top: 2%;
-  color:#2a2a2a;}
-
-/* AREA 4 */
-.wrapper_footer-main {
-background-color: #d8d8d8;
-padding: 10px;
-font-size: .8em;
-text-align: center;
-color: white;}
-
-/*Clear floats after the columns*/
-.wrapper_main-content:after {
-  content: "";
-  display: table;
-  clear: both;}
-
-
-/*== HEADER ==*/
-
-.hdr_logo {
-  background-color: #fff;
-  width:100%;
-  height: auto;
-  padding-bottom: 3%;
-  text-align: left;
-  font-size: 35px;
-  color: white;}
-
-.hdr_logo img {
-  position: relative;
-  max-width:250px;
-  height: auto;}
-
-
-/*Main Navigation: lg_screen */    
-.nav_main{
-  width: 100%;
-  height: auto;  
-  background: #fff;
-  margin-top: 2%;
-  text-align: center;
-  z-index: 0;}
-
-/*Main Section Top Navigation List*/
-
-.nav_main .nav_link{
-  display:inline-block;
-  padding: .35em;
-  margin: 1em;
-  text-transform: uppercase;}
-
-.nav_main .nav_link a {
-  text-decoration: none;
-  color:#2a2a2a;}
-
-.nav_main .nav_link a:hover {
-  text-decoration: underline;}
-
-/*Hamburger menu: lg_screen */
-.hamburger-menu__button,
-.hamburger-menu__button span,
-.slider,
-.hamburger-menu input,
-.hamburger-menu .taggle_line,
-.hamburger-menu .slider_link {
-  display: none;}
-
-		/*Articles*/
-
-/*====START: IMAGE GALLERY (Thumbnails Toggle) ====*/
-
-.img_gallery{
-  position: relative;
-  display: block;
-  float: none;
-  z-index: 4;
-  width: 90%;
-  margin: 10px auto;
-  margin-left: 5%;}
-  
-.img_gallery-taggle {
-  position: relative;
-  display: block;
-  margin: auto;
-  width: 100%;
-  text-align: center;}
-  
-.img_gallery-taggle input {
-  display: none;}
-
-.img_gallery-taggle label {
-  display: inline-block;}
-
-.img_gallery-taggle .item_image {
-  display: none;
-  width: 100%;
-  height: 500px;
-  align-items: center;
-  justify-content: center;}
-
-.img_gallery-taggle .item_image img {
-  max-height: 100%;
-  max-width: 100%;
-  border-radius: 0.15em;
-  -webkit-border-radius: 0.15em;
-  -moz-border-radius: 0.15em;}
-
-.img_gallery-taggle .item_thumbnail {
-  margin-top: 0.3em;
-  max-width: 100%;
-  height: 60px;
-  align-items: center;
-  justify-content: center;}
-
-.img_gallery-taggle .item_thumbnail img:hover {
-  cursor: pointer;
-  -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
-  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.0.5);}
-
-.item_thumbnail img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  -webkit-border-radius: 0.5em;
-}
-
-#img_default:checked ~ #show_default,
-#img1:checked ~ #show1,
-#img2:checked ~ #show2,
-#img3:checked ~ #show3,
-#img4:checked ~ #show4 {
-  display: flex;
-}
-
-/*====END: IMAGE GALLERY (Thumbnails Toggle) ====*/
-
-/*====ITEM DESCRIPTION ====*/
-.Product_description{
-  position: relative;
-  width:100%;
-  float: none;
-  display:block;
-  margin-left: 2%;
-  margin-top: 3%;
-  margin-right: 5%;
-  z-index: 1;}
-
-.test {
-  list-style: square;
-  color: #2a2a2a;
-  padding-left: 5%;
-}
-
-/*== SECTION 2 ==*/
-
-.img_gallery .label,
-.taggle-div .label:hover {
-  cursor: default;
-  text-decoration: none;
-  color:#2a2a2a}
-
-.img_gallery .label {
-  display: block;
-  width: 100%;
-  max-height: 100%;
-  padding: 10px;
-  margin: 0.2em auto;
-  background-color: #dfdfdf;
-  color: #2a2a2a;
-  text-align: center;
-  border: 1px solid #f0efef;
-  border-radius: 0.3em;
-  -moz-border-radius: 0.3em;
-  -webkit-border-radius: 0.3em;}
-
-.taggle-div {
-  position: relative;
-  display:block;
-  margin: 0 auto;
-  width:90%;
-  height: auto;
-  text-align: center;
-  overflow: hidden;}
-
-.taggle-div .label  {
-  position: relative;
-  display: block;
-  margin: 0;
-  padding: .8em;
-  width:26%;
-  letter-spacing: .1em;
-  height: auto;
-  border:1px solid #d8d8d8;
-  border-radius: 1.5em;
-  -webkit-border-radius: 1.5em;
-  -moz-border-radius: 1.5em;
-  color: #2a2a2a;
-  background-color: #fff;
-  font-size: .8em;
-  font-weight: bold;
-  text-align: center;}
-  
-  .taggle-div .taggle-box{
-  position: relative;
-  margin: 0 auto;
-  margin-bottom: 2%;
-  padding: 5%;
-  width: 100%;
-  background-color: #f5f5f5;
-  display: block;}
-
-.taggle-box p {
-  position: relative;
-  font-size: 1em;
-  display: block;
-  text-align: left;}
-
-  .taggle-box4 ol {
-  list-style-type: decimal;
-    font-size: .8em;
-    text-align: left;
-    margin: 1em 0 0 3em;
-    list-style-type: decimal;}
-
-  .taggle-box4 li {
-      margin-top: .7em;}
-
-  /* Labels for checked inputs */
-  input:checked + .label {
-    color:#2a2a2a;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: none;}
-
-  input:checked + .label:hover {
-  cursor: default;}
-      
-  /* Remove Radio inptut circle& ul/li style */
-   /*Taggle Interaction*/
-  .taggle-box__default,
-  .taggle-box2,
-  .taggle-box3,
-  .taggle-box4,
-  .taggle-box5,
-  .taggle-box6 {
-    position: relative;
-    opacity: 1;
-    display: none;
-    width: 100%;
-    max-height: 100%;}
-  
-  #opt-in1:checked ~ .taggle-box__default {
-    display: block;
-    opacity: 1;
-    color:2a2a2a;}
-      
-  #opt-in2:checked ~ .taggle-box2 {
-    display: block;
-    opacity: 1;
-    margin-bottom: 10px;}
-  
-  #opt-in3:checked ~ .taggle-box3 {
-    display: block;
-    opacity: 1;
-    margin-bottom: 10px;}
-  
-    #opt-in4:checked ~ .taggle-box4 {
-    display: block;
-    opacity: 1;}
-      
-  #opt-in5:checked ~ .taggle-box5 {
-    display: block;
-    opacity: 1;
-    margin-bottom: 10px;}
-  
-  #opt-in6:checked ~ .taggle-box6 {
-    display: block;
-    opacity: 1;
-    margin-bottom: 10px;}
-      
-  
-  input {display:none;}
-  
-  input:checked + label {text-decoration: none;}
-
-  table{ margin-top:20px;}
-
-    #table1_Header {
-      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-      border-collapse: collapse;
-      width: 100%;}
-
-    #table1_Header, #table1_Header th {
-      border: 1px solid #ddd;
-      padding: 8px;}
-
-    #table1_Header tr:nth-child(even){background-color: #f2f2f2;}
-
-    #table1_Header tr:hover {background-color: #ddd;}
-
-
-
-    #table1_Header th {
-      padding-top: 12px;
-      padding-bottom: 12px;
-      text-align: left;
-      background-color: #2a2a2a;
-      color: white;}
-
-
-
-
-/*== FOOTER ==*/
-
-
-/* Style the footer */
-
-
-
-
-/*== @MEDIA QUERIES  RESPONSIVE LAYOUT || for small screens ==*/
-
-
-@media (max-width: 768px) {
-    /*== BASICS ==*/
-.Product_description {
-  display: block;
-}
+ 
     
-*{
-  float: none;
-}
-
-	nav, article {
-		width: 100%;
-		height: auto;}
-
-	.hdr_line-break {
-		width:100%;
-		position:absolute;
-		margin-top: 5%;}
-
-		/*== HEADER ==*/
 
 
-	.hdr_logo img {
-		position: relative;
-		display: block;
-		margin: auto;
-		width:300px;
-		z-index: 3;}
+                  <!-- MOBILE DESCRIPTION -->              
+
+<div class="ebay-summary_sm"> 
+
+    <div vocab="https://schema.org/" typeof="Product"> 
+
+            <!-- ///// EDIT ONLY Below - Your Description Snippet Summary (will be part of your description above and displayed on mobile screens from ebay - MAX 800 characters included spaces) - : Replace only the text between the angled brackets: 
+            i.e ' ..> text to replace/edit <.. '.  /////-->
+    <span property="description">This is the Item description Summary, how it will appear on a mobile screen. Here you can add till 800 characters, included spaces, but in a plain text. Please proceed to see template</span> 
+             <!--///// EDIT ONLY Above /////--> 
+
+    </div> 
+</div> 
+
+<!--== TEMPLATE ==--> 
+
+<meta charset="UTF-8"><meta name="viewport" content="initial-scale=1.0"> <font rwr="1" size="4" style="font-family:Arial"><title>Page Title</title><meta charset="UTF-8"><meta name="viewport" content="initial-scale=1.0"> <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"> <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://dardip.github.io/templateEbay1/noFloat_Default_Grey.css" rel="stylesheet" type="text/css">
     
-  /*== SECTION(sm) ==*/
-  
-  .wrapper_main-content {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    width:100%;
-    float: none;
-    padding: 2%;
-    margin-top: 2%;}
+    <article>
+        
+    <!--== AREA 1 ==-->
+        <header class="wrapper_hdr"> 
 
-  /*START: Hamburger menu: STYLE*/
 
-  .nav_main .nav_link {
-    display: none;}
+            <!--///// EDIT ONLY Below - Your logo image URL link - : Select and replace only from "https.. .png". 
+                Be sure to leave the double commas ' ".." ' /////-->
+            <div class="hdr_logo"> <img src="https://dardip.github.io/templateEbay1/logoReplacement.png"> </div> 
+
+            <!--///// EDIT ONLY Above /////-->
     
-	.hamburger-menu {
-    display: block;
-    z-index: 90;
-    height: auto;
-    max-width: 100%;
-    position: absolute;
-    left: 0;}
+            <nav class="nav_main hamburger-menu"> 
 
-  .hamburger-menu .taggle_line{
-    position: relative;
-    list-style-type:none;
-    display: block;
-    margin:4px;}
+                    <input type="checkbox"> 
 
-  .hamburger-menu .taggle_line > div {
-    width: 30px;
-    height: 3px;
-    background-color: #2a2a2a;}
+                    <ul> 
 
-  .hamburger-menu .slider {
-    display: block;
-    position: absolute;
-    top:20;
-    left: 0;
-    width: 100%;
-    height: auto;
-    opacity: 1;
-    z-index: 5;
-    margin-top: 20px;
-    padding-bottom: 0;
-    padding-top:1px;
-    text-align: left;
-    transform: translateX(-1010px);
-    transition: transform 0.5s;}
-      
-  .hamburger-menu .slider_link {
-    position: relative;}
-      
-  .hamburger-menu .nav_link a {
-    text-decoration: none;
-    color:#2a2a2a;}
-      
-  .hamburger-menu .nav_link a:hover {
-    text-decoration: underline;}
+            <!-- ///// EDIT ONLY Below - Navigation Links 1 - : Replace the text between the angled brackets based on the link ' "https://.." ' of your shop section chosen (i.e. category name link, feedback section link, contact link): 
+                i.e " .."#"> text to replace/edit </a> li /////-->
+                        <li class="nav_link"><a href="https://www.ebay.co.uk/usr/ddisign"target="_blank">About</a>
+                        </li>
+                        <li class="nav_link"><a href="https://www.ebay.co.uk/usr/ddisign"target="_blank">Men</a>
+                        </li>
+                        <li class="nav_link"><a href="https://www.ebay.co.uk/usr/ddisign"target="_blank">Women</a>
+                        </li>
+                        <li class="nav_link"><a href="https://www.ebay.co.uk/usr/ddisign"target="_blank">Kids</a>
+                        </li>
+                        <li class="nav_link"><a href="https://www.ebay.co.uk/usr/ddisign"target="_blank">Babies</a>
+                        </li>
+                        <li class="nav_link"><a href="https://www.ebay.co.uk/usr/ddisign"target="_blank">Sales</a>
+                        </li>
 
-  .hamburger-menu .slider_link {
-    position: relative;
-    display:block;}
+             <!--///// EDIT ONLY Above /////-->
 
-  .hamburger-menu__button li > div {
-    
-    width: 35px;
-    height: 5px;
-    background-color: #2a2a2a;
-    margin: 6px 0;
-    left:6px;
-    top:15px;
-    flex-direction:column;
-    justify-content:center;
-    position: relative;
-    z-index: 999;}
+                    </ul> 
+                    
+                        <ul >
+                            <li class="taggle_line"><div></div></li>
+                            <li class="taggle_line"><div></div></li>
+                            <li class="taggle_line"><div></div></li>
+                        </ul>
+                    
+                    <section class="slider"> 
+                        <ul> 
 
-  .hamburger-menu__button div:first-child{
-    margin-top: 5%;}
-  
-  .hamburger-menu__button span:last-child {
-    padding-bottom: 15px;}
-  
-  .hamburger-menu {
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow:visible;}
-
-  .hamburger-menu .slider_link {
-    margin: 0px 0 0 0;
-    padding: 20px;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    font-weight: bold;
-    border-top:1px solid #f3f3f3;
-    width:100%;}
-
-  .hamburger-menu .slider_link a {text-decoration:none; color:#2a2a2a; ;}
+            <!-- ///// EDIT ONLY Below - Navigation Links 2 - : Replace only the text between the angled brackets: 
+                i.e " .."#"> text to replace/edit </a> li /////-->
+                            <li class="slider_link"><a href="#">link</a>
+                            </li>
+                            <li class="slider_link"><a href="#">link</a>
+                            </li>
+                            <li class="slider_link"><a href="#">link</a>
+                            </li>
+                            <li class="slider_link"><a href="#">link</a>
+                            </li>
+                            <li class="slider_link"><a href="#">link</a>
+                            </li>
+                            <li class="slider_link"><a href="#">link</a>
+            <!--///// EDIT ONLY Above /////-->
 
 
-    .slider {
-      background-color: #fff;
-      border-radius: 0 10px 10px 0;
-      box-shadow: 2px 2px 10px #7e7e7e;}
+                        </ul>
+                    </section>
+            
+            </nav>  
+        </header>
+        
+<hr class="hdr_line-break"> 
 
-    /*END: Hamburger menu: STYLE*/
-  
-  /*START: Hamburger menu: INTERACTION*/
-  .hamburger-menu input[type='checkbox'] {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border: 1px solid black;
-    opacity: 0;
-    position: absolute;
-    left: 0px;
-    z-index: 90;
-    cursor: pointer;}
-  
-  .hamburger-menu input:checked ~ .hamburger-menu__button {
-    background: none;}
-    
-    .hamburger-menu input:checked .image-gallery div {
-        opacity: 0.3;}
-  
-  .hamburger-menu input:checked ~ .slider {
-    transform:none;}
+    <!-- AREA 2 -->
+
+        <main class="wrapper_main-content">
+           
+           
+              
+            <section class="Product_description"> 
 
 
-    /* Style the list inside the menu  */
-  .nav_main {
-    display: block;
-    width: 100%;}
-  
+                <!-- ///// EDIT ONLY Below - Your Item Description - : Replace only the text between the angled brackets: 
+                i.e ' ..> text to replace/edit <.. '. /////-->
+                <h1 class="f3 b helvetica Mt(20) Lh(f)">ebay 2020 compliant Template Design - 100% Responsive! <h1> 
+                <h2 class="f5 b underline helvetica Mt(20)">PRODUCT DETAILS:</h2>  
+                <p class="helvetica Mt(20) Lh(p) p1">Responsive Template, simply designed in order to give buyers a clear and better organized content.<br><br>
+                This template is suitable for any category. 
+                <!--///// EDIT ONLY Above /////-->               
+                </p><br>
 
-    /*== SECTION ==*/
-
-    /* Style the articles */
-
-/*====START: IMAGE GALLERY (Thumbnails Toggle) ====*/
-
-  .img_gallery{
-    display: block;
-    width: 90%;
-    float: none;
-    margin: 20px auto;
-    margin-bottom: 0%;}
-
-  .img_gallery-taggle .item_thumbnail {
-      width: 100%;
-      position: relative;}
-
-  .item_image {
-      display: none;
-      width: 100%;
-      height: 400px;
-      align-items: center;
-      justify-content: center;}
-    
-    .item_thumbnail {
-      margin-top: 0.2em;
-      max-height: 60px;
-    
-    }
-
-    /*====END: IMAGE GALLERY (Thumbnails Toggle) ====*/
-
-    /*Item Description*/
-
-  .Product_description {
-    position: relative;
-    margin: 0 auto;
-    padding: 5%;
-    display: block;
-    width:100%;
-    z-index: 3;}
-
-  .Product_description p, .Product_description h2{
-    text-align: left;}
-
-  .Product_description > h1{
-    text-align: center;}
-
-  .test {
-    list-style: square;
-    color: #2a2a2a;
-    padding-left: 5%;}
+                <h2 class="f5 b underline helvetica Mt(20)">BENEFITS:</h2>                
+                 
+                 <ul class="test helvetica Mt(20) Lh(f)">
 
 
-    /*== SECTION 2 sm - taggle divs ==*/
-    .taggle-div label  {
-      width: 100%;
-      display: block;}
+                <!-- ///// EDIT ONLY Below - Your Item Bullet Points Description - : Replace only the text between the angled brackets: 
+                i.e ' li> text to replace/edit </li '. /////-->
 
-    .taggle-div .taggle-box{
-      margin: 0 0 2% 0;}
+                <!--==== START YOUR BULLET LIST Below ====-->  
+                      <li> ebay 2020 compliant - No active content / No javascript. </li>
+                      <li> Mobile Friendly 100% Responsive design. </li>
+                      <li> Meet your buyers need. </li>
+                      <li> Create a better user experience.</li>
+                      <li> Potential Conversion Increase. </li> 
+                      <li> No Coding Required. </li> 
+                      <li> After sales support. </li>
+                      <li> 1 Free consultation of your ebay listing/account. </li>                     
+                 <!--///// EDIT ONLY Above /////--> 
 
-.taggle-box4{width: 100%;
-position: relative;
-margin:auto;}
+     
+              
+              
+                  </ul><br>
+                <!-- ///// EDIT ONLY Below - Your Item Bullet Points Description - : Replace only the text between the angled brackets: 
+                i.e ' > text to replace/edit </'. /////-->                 
+                 <h2 class="f5 b underline helvetica Mt(20)">PRODUCT SPECIFICS:</h2>
+                 
+                
+                 <p class="helvetica Mt(20) Lh(p) p1">This Template comes with the specifics reported below: </p>
+                 <!--///// EDIT ONLY Above /////--> 
 
-#table1_Header  {
-  padding:0;
-  position:relative;
-  margin: 1em auto;
-  font-size: .8em;
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;}
-  }
-  @media (max-width: 478px) {
-  .Product_description > h1{
-    text-align: left;}
-  }
-  @media (max-width: 278px) {
-    .img_gallery{
-      width: 100%;
-      height: auto;}
+                
+                <ul class="test helvetica Mt(20) Lh(f)">
 
-      .img_gallery-taggle .item_thumbnail{
-      position: relative;
-      bottom: 4em;
-    }
 
-  }
+                <!--==== START YOUR BULLET LIST Below ====--> 
+                      <li> Html/Css source files.</li>
+                      <li> 5 Pics to add in description.</li>
+                      <li> Hamburger Menu on mobile screen.</li>
+                      <li> Size Guide section Table /or image to add </li>
+                      <li> 1 Free consultation on your ebay Listing/Account (if required) </li>
+                   <!--///// EDIT ONLY Above /////-->        
+
+            </ul> <br>
+                <!-- ///// EDIT ONLY Below - Your Item Bullet Points Description - : Replace only the text between the angled brackets: 
+                i.e ' > text to replace/edit </'. /////--> 
+            <h2 class="f5 b underline helvetica Mt(20)">WHAT I NEED:</h2>
+
+                 <ul class="test helvetica Mt(20) Lh(f)">              
+                    
+                <!--==== START YOUR BULLET LIST Below ====-->           
+                        <li> Your User ID: to customize links.</li>
+                        <li> Your contacts/availability for the Consultation (if needed).</li>
+                   <!--///// EDIT ONLY Above /////--> 
+
+                </ul>
+                 
+            </section> 
+        </main>
+
+
+        <section class="wrapper_sec-info">
+            <div class="taggle-div"> 
+
+
+            
+                 <!-- ///// EDIT ONLY Below - Your Item Bullet Points Description - : Replace only the text between the angled brackets: 
+                i.e ' > text to replace/edit </'. /////-->           
+                  <input type="radio" name="my-checkbox" id="opt-in1" checked=""> 
+                      <label class="label" for="opt-in1"><p>Return</p></label>
+                      <div class="taggle-box taggle-box__default Mt(20)"> 
+                        <p class="Lh(p)"><b class="b underline">RETURNS:</b><br><br> Due to the nature of the work, I cannot accept returns & refund, but I will offer my help in order to assist you and try to make you satisfied.</p>
+                    </div> 
+                  <input type="radio" name="my-checkbox" id="opt-in2"> 
+                    <label class="label" for="opt-in2"><p>Delivery</p></label>
+                    <div class="taggle-box taggle-box2 taggle-box__default Mt(20)"> 
+                        <p class="Lh(p)"><b class="b underline">DELIVERY:</b> <br><br>This template will be sent to you within 48 hours after payment by PayPal.</p>
+                      </div>
+                    
+                 <input type="radio" name="my-checkbox" id="opt-in3">
+                      <label class="label" for="opt-in3"><p class="p-label">Payment</p></label> 
+                      <div class="taggle-box taggle-box3 taggle-box__default Mt(20)"> 
+                        <p class="Lh(p)"><b class="b underline">PAYMENT:</b> <br><br>I only accept Paypal payment method. </p>
+                    </div> 
+                    
+                  <input type="radio" name="my-checkbox" id="opt-in4"> 
+                  <label class="label" for="opt-in4"><p class="p-label">Size Guide</p></label>
+            
+
+            
+
+
+
+                   <!--///// EDIT ONLY Above /////--> 
+
+
+              
+                <div class="taggle-box taggle-box4 Mt(20)"> 
+
+                 <!-- ///// EDIT ONLY Below - Your Item Bullet Points Description - : Replace only the text between the angled brackets: 
+                i.e ' > text to replace/edit </'. /////--> 
+                  <p class="Lh(p)"><b class="b underline">HOW TO MEASURE:</b> <br><br></p>
+
+                  <p>For a correct size, measure your body as follows:<br>
+
+                        <ol>
+                        <li>BUST:
+                            <ul>Measure around fullest part</ul></li>
+                        <li>WAIST:
+                            <ul> Measure around natural waistline</ul></li>
+                        <li>HIPS:
+                            <ul>Measure 20cm down from the natural waistline</ul></li>
+ 
+                   <!--///// EDIT ONLY Above /////--> 
+
+                        </ol>
+                    </p>
+
+
+
+                    <table id="table1_Header">
+
+                    <!--///// EDIT TABLE BELOW: Replace only the text between the angled brackets: i.e ' > text to replace/edit </'. /////-->              
+                        <tr>
+                            <th>header1</th>
+                            <th>header2</th>
+                            <th>header3</th>
+                        </tr>
+                            <tr>
+                                <td>Value</td>
+                                <td>Value</td>
+                                <td>Value</td>
+                            </tr>
+                             <tr>
+                                <td>Value</td>
+                                <td>Value</td>
+                                <td>Value</td>
+                            </tr>
+                        <tr>
+                            <th>header4</th>
+                            <th>header5</th>
+                            <th>header6</th>
+                        </tr>
+                            <tr>
+                                <td>Value</td>
+                                <td>Value</td>
+                                <td>Value</td>
+                            </tr>
+                            <tr>
+                                <td>Value</td>
+                                <td>Value</td>
+                                <td>Value</td>
+                            </tr>
+                            <tr>
+                                <td>Value</td>
+                                <td>Value</td>
+                                <td>Value</td>
+                            </tr>
+                            <tr>
+                                <td>Value</td>
+                                <td>Value</td>
+                                <td>Value</td>
+                            </tr>
+                            <tr>
+                                <td>Value</td>
+                                <td>Value</td>
+                                <td>Value</td>
+                            </tr>
+
+               
+               
+                    </table>
+                    </p>
+              </div> 
+            
+            
+              </div>
+            
+            </section>    
+       
+
+</article>
+
+
+<footer class="wrapper_footer-main"> &copy; Copyright 2020 ddisign</footer> </html>
